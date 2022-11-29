@@ -1,19 +1,20 @@
 public class human {
-    public static String name, gender;
-    public static float hight, weight;
+    static String name, grade;
+    static float height, weight;
 
-    /**
-     * 
-     */
-    human() {
-        name = "Ram";
-        gender = "Male";
-        hight = 160;
+    public human() {
+        name = "Vibin";
+        grade = "Male";
+        height = 160;
         weight = 60;
-
+        System.out.println(
+                "Name  : " + name + ";  Gender  : " + grade + ";  Height  : " + height + ";  Weight  : " + weight);
     }
 
-    public static void main(strings args[]) {
-        System.out.println("Name  : " + name + ";  Gender  : " + gender + ";  Height  : " + hight + ";  Weight  : " + weight);
+    public static void main(String[] args) {
+        human obb=new human();
+        System.out.println(
+                "Name  : " + name + ";  Gender  : " + grade + ";  Height  : " + height + ";  Weight  : " + weight);
     }
+
 }
