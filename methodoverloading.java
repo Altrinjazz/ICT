@@ -10,7 +10,9 @@ public class methodoverloading {
         System.out.println("Name  : " + n + ";  Gender  : " + a + ";  Height  : " + h + ";  Weight  : " + w);
     } 
     public static void main(String[] args) {
-       
+        methodoverloading obb=new methodoverloading();
+        obb.get_details();
+        obb.get_details("Ram");
         System.out.println("value :"+ value +"   "+ "Status :"+status);
         System.out.println("Name  : " + n + ";  Gender  : " + a + ";  Height  : " + h + ";  Weight  : " + w);
 
@@ -19,6 +21,7 @@ public class methodoverloading {
         return("Name  : " + n + ";  Gender  : " + a + ";  Height  : " + h + ";  Weight  : " + w);
     }
     public String get_details( String status) {
+        
          value=n;
          if(status==value)
          {
